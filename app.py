@@ -1,4 +1,5 @@
 from flask import Flask, request
+import os
 
 app = Flask(__name__)
 
@@ -23,5 +24,7 @@ def hello_query():
     return f"Hello {name}! Your number is {number}."
 
 
+
 if __name__ == "__main__":
-    app.run(port=45000, host="0.0.0.0")
+    app.run()
+

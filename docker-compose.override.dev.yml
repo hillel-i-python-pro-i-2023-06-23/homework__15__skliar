@@ -3,9 +3,14 @@ version: '3.9'
 
 services:
   app:
-    user: "1000:1000"
-    userns_mode: "host"
+    user: ${UID}
     ports:
-      - "48000:45000"
+      - target: 48000
+        published: 45000
+        protocol: tcp
+        mode: host
     environment:
-      - PORT=45000
+      - FLASK_APP=app.py
+      - FLASK_DEBUG=0
+    command:
+      --host=0.0.0.0 --port=48000

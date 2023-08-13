@@ -21,4 +21,4 @@ COPY --chown=${USER} ./app.py app.py
 
 USER ${USER}
 
-ENTRYPOINT ["python", "app.py"]
+ENTRYPOINT ["flask", "run"]
