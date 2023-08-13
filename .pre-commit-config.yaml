@@ -34,10 +34,10 @@ repos:
     -   id: pyupgrade # обновления для кода для совместимости
         args: [--py38-plus]
 
--   repo: https://github.com/psf/black
-    rev: 23.7.0
-    hooks:
-    -   id: black # форматор кода
+#-   repo: https://github.com/psf/black
+#    rev: 23.7.0
+#    hooks:
+#    -   id: black # форматор кода
 
 -   repo: https://github.com/pre-commit/mirrors-autopep8
     rev: v2.0.2
