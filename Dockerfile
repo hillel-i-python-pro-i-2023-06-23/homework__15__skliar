@@ -21,4 +21,4 @@ COPY --chown=${USER} ./app.py app.py
 
 USER ${USER}
 
-CMD ["flask", "run", "--host=0.0.0.0", "--port=45000"]
+CMD ["flask", "run", "--host=app", "--port=45000"]
