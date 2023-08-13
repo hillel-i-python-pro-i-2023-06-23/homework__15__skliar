@@ -6,8 +6,8 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():  # put application's code here
     return (
-        "Hello World! || \n http://127.0.0.1:5000/hello-query?name=pep&number=1"
-        " || \n http://127.0.0.1:5000/hello/pep/12"
+        "Hello World! || \n http://127.0.0.1:5000/hello-query?name=pep&number=1 "
+        "|| \n http://127.0.0.1:5000/hello/pep/12"
     )
 
 
