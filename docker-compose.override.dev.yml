@@ -1,0 +1,11 @@
+version: '3.9'
+
+
+services:
+  app:
+    user: "1000:1000"
+    userns_mode: "host"
+    ports:
+      - "48000:45000"
+    environment:
+      - PORT=45000
